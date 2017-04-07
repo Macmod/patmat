@@ -53,13 +53,10 @@ int kmp_search(Text t, Text p, NTable tbl) {
 
             if (j == p.len)
                 return i - j;
-        }
-
-        if (i < t.len && p.val[j] != t.val[i]) {
-            if (j != 0)
-                j = tbl.list[j-1];
-            else
-                i++;
+        } else if (j != 0) {
+            j = tbl.list[j-1];
+        } else {
+            i++;
         }
     }
 
