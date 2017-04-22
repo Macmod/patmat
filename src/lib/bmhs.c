@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include "utils.h"
-#include "matching.h"
+#include "text.h"
 #include "bmhs.h"
 
 /*

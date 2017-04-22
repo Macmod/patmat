@@ -1,6 +1,6 @@
 #ifndef BRUTE_H
 #define BRUTE_H
-#include "matching.h"
+#include "text.h"
 
 int brute_search(Text, Text);
 

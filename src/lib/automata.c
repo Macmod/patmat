@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include "utils.h"
-#include "matching.h"
+#include "text.h"
 #include "automata.h"
 
 /*

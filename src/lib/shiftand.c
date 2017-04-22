@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "utils.h"
 #include "shiftand.h"
-#include "matching.h"
+#include "text.h"
 
 /*
    Time Complexity: O(m)
@@ -40,6 +40,10 @@ void print_mask_table(MaskTable M) {
 
         printf("\n");
     }
+}
+
+void free_mask_table(MaskTable* M) {
+    free(M->masks);
 }
 
 /*

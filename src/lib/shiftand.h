@@ -1,6 +1,6 @@
 #ifndef SHIFT_H
 #define SHIFT_H
-#include "matching.h"
+#include "text.h"
 
 typedef struct MaskTable {
     unsigned *masks;
@@ -10,6 +10,7 @@ typedef struct MaskTable {
 
 MaskTable make_mask_table(Text);
 void print_mask_table(MaskTable);
+void free_mask_table(MaskTable*);
 int shift_and_search(Text, Text, MaskTable);
 int shift_and_fuzzy(Text, Text, MaskTable, unsigned);
 
