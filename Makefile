@@ -1,4 +1,4 @@
-CFLAGS=-std=gnu99 -g -Wall -Wextra -O0 -Isrc -rdynamic -DNDEBUG $(OPTFLAGS)
+CFLAGS=-std=c99 -g -Wall -Wextra -O0 -pedantic $(OPTFLAGS)
 LIBS=-ldl $(OPTLIBS)
 
 SOURCES=$(wildcard src/**/*.c src/*.c)
