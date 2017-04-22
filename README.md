@@ -4,7 +4,6 @@ Small collection of pattern matching algorithms written in C.
 
 # todo
 - Implement: 
-    - Finite Automata;
     - Rabin-Karp;
     - Z Algorithm;
     - Aho-Corasick;
